@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Fila de la llista de contactes: inicials, nom, ciutat, correu i favorit.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:minHeight="72dp"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvInicials"
+        style="@style/TextMonograma" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCiutat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvCorreu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/chkFavorit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/lbl_favorit"
+        android:minWidth="48dp"
+        android:minHeight="48dp" />
+
+</LinearLayout>
