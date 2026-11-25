@@ -1,6 +1,6 @@
 # Contactes — Pràctica 1C
 
-**Alumne:** Héctor `<cognom1>` `<cognom2>` · DAM2B
+**Alumne:** Héctor López Pedrosa · DAM2B
 **Mòdul:** 0489 Programació Multimèdia i Dispositius Mòbils
 
 ## Què fa l'app
